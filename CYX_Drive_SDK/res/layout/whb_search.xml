@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/whb_grey_f4"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/whb_title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="48dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/whb_title_button_style"
+            android:onClick="back"
+            android:padding="9dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/whb_back"
+            android:textColor="@color/whb_white" />
+
+        <TextView
+            android:id="@+id/titleSearchContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="25dp"
+            android:text="@string/whb_search"
+            android:textColor="@color/whb_white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/searchtab_begin"
+        android:layout_width="fill_parent"
+        android:layout_height="47dp"
+        android:background="@color/whb_grey_dd"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.netwise.ematch.bean.SearchTextView
+            android:id="@+id/autoComplete"
+            android:layout_width="0dp"
+            android:layout_height="35dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.0"
+            android:background="@color/whb_white"
+            android:completionThreshold="1"
+            android:drawableLeft="@drawable/whb_main_search"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/whb_search_clear"
+            android:dropDownHeight="0dp"
+            android:dropDownHorizontalOffset="20dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="@string/whb_input_search_business"
+            android:imeOptions="actionSearch"
+            android:inputType="textAutoComplete"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:textColor="@color/whb_black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/whb_hot_search"
+            android:textColor="@color/whb_black"
+            android:textSize="18sp" />
+
+        <GridView
+            android:id="@+id/hotGridView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:numColumns="4"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</LinearLayout>

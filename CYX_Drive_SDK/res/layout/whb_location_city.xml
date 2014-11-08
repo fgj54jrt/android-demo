@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:background="@color/whb_grey_dd"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/whb_location_city"
+        android:textColor="@color/whb_white" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip" >
+
+        <TextView
+            android:id="@+id/tv_gpscity"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_toRightOf="@+id/circleProgressBar"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:textColor="@color/whb_black"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+</LinearLayout>

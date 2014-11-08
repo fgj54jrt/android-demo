@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cyx_confirm_bg" >
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarm_title"
+        android:text="@string/car_fortify_alarm"
+        android:gravity="center_horizontal"
+        android:textSize="22sp"
+        android:textColor="@color/black"/>
+    <View android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/green2"
+        android:layout_marginTop="3dp"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        android:weightSum="1">
+
+        <ListView
+            android:id="@+id/alarmList"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.5"
+            android:divider="?android:attr/listDivider"
+            android:dividerHeight="1dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" 
+            >
+
+            <Button
+                android:id="@+id/alarmOk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@drawable/register_btn_bg"
+                android:text="@string/cancel_voice"
+                android:textColor="@color/white"
+                android:textSize="16sp" 
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <Button
+                android:id="@+id/alarmCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/register_btn_bg"
+                android:text="@string/close"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

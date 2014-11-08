@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include android:id="@+id/title" layout="@layout/cyx_title" />"
+    
+    <TextView 
+        android:id="@+id/hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/unbinding_reason"
+        android:layout_marginTop="20dp"/>
+    
+    <LinearLayout
+        android:id="@+id/trouble_layout" 
+        android:layout_below="@id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp">
+        <CheckBox 
+		    android:id="@+id/trouble_cb"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/checkbox_regist"
+		    android:button="@null"
+		    android:checked="true"/>
+        <TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="18sp"
+		    android:layout_marginLeft="5dp"
+		    android:text="@string/trouble"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/lost_layout" 
+        android:layout_below="@id/trouble_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp">
+        <CheckBox 
+		    android:id="@+id/lost_cb"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/checkbox_regist"
+		    android:button="@null"
+		    android:checked="true"/>
+        <TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="18sp"
+		    android:layout_marginLeft="5dp"
+		    android:text="@string/lost"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/data_layout" 
+        android:layout_below="@id/lost_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp">
+        <CheckBox 
+		    android:id="@+id/data_inac_cb"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/checkbox_regist"
+		    android:button="@null"
+		    android:checked="true"/>
+        <TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="18sp"
+		    android:layout_marginLeft="5dp"
+		    android:text="@string/data_inaccuracy"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/oper_layout" 
+        android:layout_below="@id/data_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp">
+        <CheckBox 
+		    android:id="@+id/oper_inco_cb"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/checkbox_regist"
+		    android:button="@null"
+		    android:checked="true"/>
+        <TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="18sp"
+		    android:layout_marginLeft="5dp"
+		    android:text="@string/operation_inconvenient"/>
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/others"
+        android:layout_below="@id/oper_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/others"
+        android:layout_marginLeft="40sp"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp" />
+    
+    <EditText 
+        android:id="@+id/other_et"
+        android:layout_below="@id/others"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:maxLength="150"
+        android:lines="3" />
+    
+    <Button 
+        android:id="@+id/ensure_btn"
+        android:layout_below="@id/other_et"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/ensure"
+        android:textColor="@color/white"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/register_btn_bg" />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <server_ip>203.195.143.251</server_ip>
+    <server_port>5222</server_port>
+    <test_server_ip>172.16.0.252</test_server_ip>
+    <test_server_port>5222</test_server_port>
+    
+</config>

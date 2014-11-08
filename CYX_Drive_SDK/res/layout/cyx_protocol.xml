@@ -1,0 +1,117 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/regist_bg_color"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+
+	<include layout="@layout/cyx_title"/>
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView android:textColor="@color/gray"
+            android:textSize="25sp"
+            android:text="@string/user_pro_general_rules"
+            android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+        <TextView 
+	        android:textColor="@color/gray"
+	        android:textSize="16sp"
+	        android:text="@string/detial_general_rules"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"/>
+        
+        <TextView android:textColor="@color/gray"
+            android:textSize="25sp"
+            android:text="@string/user_pro_streat"
+            android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+        <TextView 
+	        android:textColor="@color/gray"
+	        android:textSize="16sp"
+	        android:text="@string/detial_user_pro_streat"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"/>
+        <TextView android:textColor="@color/gray"
+            android:textSize="25sp"
+            android:text="@string/user_pro_using"
+            android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+        <TextView 
+	        android:textColor="@color/gray"
+	        android:textSize="16sp"
+	        android:text="@string/detial_user_pro_using"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"/>
+        
+       <TextView android:textColor="@color/gray"
+            android:textSize="25sp"
+            android:text="@string/service_content"
+            android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+        <TextView 
+	        android:textColor="@color/gray"
+	        android:textSize="16sp"
+	        android:text="@string/detial_service_content"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"/>
+        <TextView android:textColor="@color/gray"
+            android:textSize="25sp"
+            android:text="@string/user_pro_other"
+            android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+        <TextView 
+	        android:textColor="@color/gray"
+	        android:textSize="16sp"
+	        android:text="@string/detial_other"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"/>
+        <TextView android:textColor="@color/gray"
+            android:textSize="25sp"
+            android:text="@string/user_pro_notice"
+            android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+        <TextView 
+	        android:textColor="@color/gray"
+	        android:textSize="16sp"
+	        android:text="@string/detial_notice"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"/>
+        
+        <TextView android:textColor="@color/gray"
+            android:textSize="25sp"
+            android:text="@string/user_por_other2"
+            android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+        <TextView 
+	        android:textColor="@color/gray"
+	        android:textSize="16sp"
+	        android:text="@string/user_por_other2_content"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"/>
+        
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

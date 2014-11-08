@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/bg_serch"
+     >
+	<ImageView
+        android:id="@+id/search_img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:contentDescription="@string/img"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/cyx_back_press"
+        android:visibility="gone"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginRight="3dp"
+       android:id="@+id/search_search_layout"
+       android:layout_toRightOf="@+id/search_img_back"
+      android:layout_toLeftOf="@+id/btn_layout"
+      android:background="@drawable/bg_search"
+      android:layout_marginTop="5dp"
+      android:orientation="horizontal"
+      android:layout_marginLeft="5dp"
+      android:layout_marginBottom="5dp">
+
+    <ImageView
+        android:id="@+id/imageView_search"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/img"
+        android:src="@drawable/fangdajing"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp" />
+  <FrameLayout android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_gravity="center_vertical">
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tv_search_AutoComplete"
+        android:textColor="@color/deep_gray"
+        android:textSize="18sp"
+        android:background="@null"
+        android:hint="@string/search"
+        android:visibility="gone"
+        android:singleLine="true"
+        android:focusable="true"
+        android:layout_gravity="center_vertical"/>
+		<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tv_main_search"
+        android:textColor="@color/deep_gray"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:background="@null"
+        android:hint="@string/search"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"/>
+    <ProgressBar
+        android:id="@+id/search_progressBar"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical|right" />
+    </FrameLayout>
+</LinearLayout>
+	<LinearLayout android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:layout_alignParentRight="true"
+	    android:id="@id/btn_layout">
+	<Button
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:id="@+id/search_btn"
+        android:text="@string/search"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+         android:gravity="center"
+        android:background="@drawable/btn_search_bg"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"/>   
+          <!-- <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/search_btn_search_voice"
+        android:background="@drawable/cyx_search_voice" /> -->
+          <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/list"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:id="@+id/tv_main_title_right" 
+        android:visibility="gone"/>
+     </LinearLayout>
+</RelativeLayout>

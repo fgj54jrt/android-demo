@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whb_grey_f4"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/whb_title_bg" >
+
+        <ImageView
+            android:layout_width="48dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/whb_title_button_style"
+            android:onClick="back"
+            android:padding="9dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/whb_back"
+            android:textColor="@color/whb_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/whb_title_citylist"
+            android:textColor="@color/whb_white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.netwise.ematch.bean.SearchTextView
+            android:id="@+id/autoComplete"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10sp"
+            android:background="@color/whb_white"
+            android:completionThreshold="1"
+            android:drawableLeft="@drawable/whb_main_search"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/whb_search_clear"
+            android:dropDownHorizontalOffset="1dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="@string/whb_input_city_name"
+            android:imeOptions="actionSearch"
+            android:inputType="textAutoComplete"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:textColor="@color/whb_black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_citylist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000" >
+    </ListView>
+
+</LinearLayout>

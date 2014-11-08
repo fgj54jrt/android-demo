@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/whb_grey_f4"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/whb_title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="48dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/whb_title_button_style"
+            android:onClick="back"
+            android:padding="9dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/whb_back"
+            android:textColor="@color/whb_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/whb_related_business"
+            android:textColor="@color/whb_white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="50dp"
+            android:fadingEdge="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/whb_related_business_point1"
+                        android:textColor="@color/whb_grey_55"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/whb_related_business_point2"
+                        android:textColor="@color/whb_grey_55"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/whb_related_business_point3"
+                        android:textColor="@color/whb_grey_55"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/bizNameTV"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:textColor="@color/whb_grey_55"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bizNameTV" >
+
+                        <ImageView
+                            android:id="@+id/businessPhoto"
+                            android:layout_width="145dp"
+                            android:layout_height="100dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/whb_moren_small" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/whb_plus" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="195dp"
+                        android:layout_height="120dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="80dp"
+                        android:background="@drawable/whb_has_card_bg"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="10dp" >
+
+                            <TextView
+                                android:id="@+id/tvBankName"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:paddingRight="50dp"
+                                android:singleLine="true"
+                                android:textColor="@color/whb_grey_dd"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/tvCardType"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvBankName"
+                                android:textColor="@color/whb_grey_dd"
+                                android:textSize="12sp" />
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="27dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/whb_unionpay" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tvCardNo"
+                            android:layout_width="fill_parent"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:ellipsize="start"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@color/whb_white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tvCardPoint"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="7dp"
+                            android:textColor="@color/whb_white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@color/whb_grey_aa"
+                    android:visibility="visible" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/whb_additional_benefits"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/whb_choosen_one"
+                        android:textColor="@color/whb_grey"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/whb_radiobutton_selector"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/whb_red"
+                            android:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/whb_radiobutton_selector"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/whb_red"
+                            android:visibility="gone" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/whb_related_btn_style"
+            android:onClick="sureRelated"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/sureRelate"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/whb_sure_related"
+                android:textColor="@color/whb_white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_gpscity"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:background="@color/whb_grey_dd"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:textColor="@color/whb_white" />
+
+</LinearLayout>

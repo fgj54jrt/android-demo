@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/regist_bg_color" >
+    
+    <include 
+        layout="@layout/cyx_title"
+        android:id="@+id/title_layout"/>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout" >
+
+        <include layout="@layout/cyx_register_bottom" />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        android:id="@+id/input_layout">
+        <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:src="@drawable/cyx_key"
+            android:layout_marginTop="3dp"
+            android:contentDescription="@string/img"/>
+        <EditText android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:layout_marginLeft="5dp"
+            android:hint="@string/plase_input_pwd"
+            android:id="@+id/edt_pwd"
+            android:maxLength="6"
+            android:numeric="integer"
+            android:digits="0123456789"
+            android:password="true"
+            android:inputType="phone"/>
+        </LinearLayout>
+        <View android:layout_height="2dp"
+            android:layout_width="wrap_content"
+            android:background="@color/green2"/>
+        <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:src="@drawable/cyx_key"
+            android:layout_marginTop="3dp"
+            android:contentDescription="@string/img"/>
+        <EditText android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:layout_marginLeft="5dp"
+            android:hint="@string/input_pwd_again"
+            android:id="@+id/edt_rePwd"
+            android:maxLength="6"
+            android:numeric="integer"
+            android:digits="0123456789"
+            android:password="true"
+            android:inputType="phone"/>
+        </LinearLayout>
+        <View android:layout_height="2dp"
+            android:layout_width="wrap_content"
+            android:background="@color/green2"/>
+    </LinearLayout>
+     <TextView  android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/pwd_regulation"
+        android:textColor="@color/green2"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:id="@+id/input_pwd_notice"
+        android:layout_marginTop="10dp"/>
+    <Button 
+       android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:background="@drawable/btn_nonpoint"
+        android:text="@string/finish"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/btn_finish"/>
+    </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

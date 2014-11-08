@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/regist_bg_color"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+
+	<include layout="@layout/cyx_title"/>
+	
+	<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/cyx_register_bottom" />
+        
+        <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="40dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/phone_no"
+	        android:drawableLeft="@drawable/cyx_phone"
+	        android:drawablePadding="2dp"
+	        android:gravity="center_vertical"
+	        android:textSize="18sp"
+	        android:textColor="@color/gray"/>
+	    <EditText
+	        android:id="@+id/register_phoneNo"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="20sp"
+	        android:inputType="phone"
+	        android:maxLength="11"
+	        android:digits="0123456789"
+	        android:textColor="@color/gray"
+	        android:background="@null" />
+	</LinearLayout>
+	<View android:layout_width="match_parent"
+	    android:layout_height="2dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:background="@color/green2"/>
+	<TextView 
+	    android:id="@+id/input_phoneNum_notice"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:text="@string/input_phoneNum_notice"
+	    android:textSize="16sp"
+	    android:textColor="@color/green2"
+	    android:layout_marginTop="5dp"
+	    android:visibility="gone"/>
+	
+	<LinearLayout 
+	    android:layout_marginTop="20dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:orientation="horizontal">
+	<CheckBox 
+	    android:id="@+id/register_checkbox"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/checkbox_regist"
+	    android:button="@null"
+	    android:checked="true"/>
+	<TextView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/agree"
+	    android:textSize="18sp"
+	    android:layout_marginLeft="5dp"
+	    android:id="@+id/agree"
+	    android:textColor="@color/gray"/>
+	<TextView 
+	    android:id="@+id/protocol_tv"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="18sp"
+	    android:text="@string/user_regist_protocol"
+	    android:textColor="@color/regist_text_color"/>
+	</LinearLayout>
+	
+	<Button 
+	    android:id="@+id/next_btn"
+	    android:layout_width="match_parent"
+	    android:layout_height="45dp"
+	    android:text="@string/next"
+	    android:textSize="20sp"
+	    android:gravity="center"
+	    android:textColor="@color/white"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:background="@drawable/register_btn_bg"/>
+	</LinearLayout>
+	</FrameLayout>
+
+</LinearLayout>
