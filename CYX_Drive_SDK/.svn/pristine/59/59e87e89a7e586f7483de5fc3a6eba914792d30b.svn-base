@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <!-- 选中时效果 -->
-    <item android:drawable="@drawable/whb_radio_pressed" android:state_checked="true" android:state_enabled="true"/>
-    <!-- 未选中时效果 -->
-    <item android:drawable="@drawable/whb_radio_cancel" android:state_checked="false" android:state_enabled="true"/>
-
-</selector>
