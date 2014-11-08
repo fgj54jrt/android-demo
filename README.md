@@ -1,4 +1,0 @@
-android-demo
-============
-
-for android
